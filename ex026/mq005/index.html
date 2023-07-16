@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
+</head>
+<body onresize="mudouTamanho">
+    <header>
+        <h1>Meu site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Agronegócio</a></li>
+                <li><a href="#">Soja</a></li>
+                <li><a href="#">Milho</a></li>
+                <li><a href="#">Milheto</a></li>
+                <li><a href="#">Sorgo</a></li>
+                <li><a href="#">Algodão</a></li>
+                <li><a href="#">Bovinos</a></li>
+                <li><a href="#">Suinos</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Midea Query</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, placeat explicabo id
+                 accusantium reiciendis praesentium suscipit eveniet quibusdam similique molestiae 
+                 ab tempora, quos nesciunt ea ducimus! Maiores sequi nemo quis. <br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos possimus,
+                 beatae officia repudiandae nulla autem nesciunt corporis inventore quasi totam 
+                 laboriosam ducimus asperiores, quia veritatis illo quo ullam quaerat eveniet.</p> <br>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil saepe, provident
+                voluptate at accusamus nulla placeat nostrum vel tenetur. Vitae nostrum tempore modi.
+                Repellendus nisi odit, sequi iste minima provident! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Molestias quaerat blanditiis quos voluptates corrupti
+                amet natus corporis repudiandae! Sed, quaerat? Repellendus hic cupiditate sed numquam, 
+                incidunt rem atque a pariatur! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Fuga nesciunt voluptates unde non excepturi necessitatibus. Harum, laudantium cupiditate
+                illum consequuntur assumenda laborum incidunt numquam quis in exercitationem animi
+                nostrum deserunt!</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+        if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+        } else {
+            itens.style.display = 'block'
+        }
+        }
+
+        function mudouTamanho() {
+            if (window.innerwidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
